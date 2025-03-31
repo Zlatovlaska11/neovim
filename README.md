@@ -1,6 +1,6 @@
 # neovim
 
-my base neovim config
+my newer base neovim config
 
 # Why neovim?
 
