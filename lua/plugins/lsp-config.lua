@@ -40,7 +40,19 @@ return {
       lspconfig.clangd.setup({
         capabilities = capabilities
       })
+      lspconfig.intelephense.setup({
+        filetypes = { "php", "latte" },
+        settings = {
+          intelephense = {
+            stubs = { "nette" },
+          },
+        },
+      })
       lspconfig.astro.setup({
+        capabilities = capabilities
+      })
+      lspconfig.html.setup({
+        filetypes = {"html", "latte" },
         capabilities = capabilities
       })
       lspconfig.slint_lsp.setup({
