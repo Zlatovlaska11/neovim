@@ -23,6 +23,10 @@ NVIM_APPNAME=Zlatovlaska11/neovim/ nvim
 
 ## Plugins
 
+### My own
+
++ [Zlatovlaska11/zsnip](https://dotfyle.com/plugins/Zlatovlaska11/zsnip)
+
 ### colorscheme
 
 + [rose-pine/neovim](https://dotfyle.com/plugins/rose-pine/neovim)

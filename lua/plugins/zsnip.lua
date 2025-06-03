@@ -4,5 +4,6 @@ return {
     require("zsnip").setup()
 
     vim.keymap.set("v", "<leader>ss", ":SnippetSave<CR>", { noremap = true, silent = true })
+    vim.keymap.set("n", "<leader>zs", ":SnippetShow<CR>", { noremap = true, silent = true })
   end,
 }
