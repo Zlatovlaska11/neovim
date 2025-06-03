@@ -1,8 +1,8 @@
--- return {
---   "Zlatovlaska11/zsnip",
---   config = function()
---     require("zsnip").setup()
---
---     vim.keymap.set("v", "<leader>ss", ":SnippetSave<CR>", { noremap = true, silent = true })
---   end,
--- }
+return {
+  "Zlatovlaska11/zsnip",
+  config = function()
+    require("zsnip").setup()
+
+    vim.keymap.set("v", "<leader>ss", ":SnippetSave<CR>", { noremap = true, silent = true })
+  end,
+}
