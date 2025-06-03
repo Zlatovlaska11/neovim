@@ -8,7 +8,7 @@
   "harpoon": { "branch": "harpoon2", "commit": "ed1f853847ffd04b2b61c314865665e1dadf22c7" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
   "lualine.nvim": { "branch": "master", "commit": "0c6cca9f2c63dadeb9225c45bc92bb95a151d4af" },
-  "mason-lspconfig.nvim": { "branch": "main", "commit": "4cad8f67d9594565549442e2e8c68556761ab7a9" },
+  "mason-lspconfig.nvim": { "branch": "main", "commit": "c2682b0d9732bf52cbc34862056f143e71dc4a6d" },
   "mason.nvim": { "branch": "main", "commit": "8024d64e1330b86044fed4c8494ef3dcd483a67c" },
   "mini.pick": { "branch": "main", "commit": "c272dc61cd0326b344761cd9d031bfcdef1978c7" },
   "neogit": { "branch": "master", "commit": "7fe60f9aa6eacf2eb730c4e9b83d06a36d028161" },
@@ -23,5 +23,5 @@
   "trouble.nvim": { "branch": "main", "commit": "85bedb7eb7fa331a2ccbecb9202d8abba64d37b3" },
   "undotree": { "branch": "master", "commit": "b951b87b46c34356d44aa71886aecf9dd7f5788a" },
   "vim-be-good": { "branch": "master", "commit": "0ae3de14eb8efc6effe7704b5e46495e91931cc5" },
-  "zsnip": { "branch": "main", "commit": "a92d24f2b065653101700b54178983023ac49fa9" }
+  "zsnip": { "branch": "main", "commit": "d51d9c7889a05a444fdb3b9c58211774e0529f9f" }
 }
