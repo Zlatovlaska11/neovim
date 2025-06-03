@@ -40,7 +40,10 @@ return {
       lspconfig.clangd.setup({
         capabilities = capabilities
       })
-      lspconfig.intelephense.setup({
+      lspconfig.ocamllsp.setup({
+        capabilities = capabilities
+      })
+      lspconfig.phpactor.setup({
         filetypes = { "php", "latte" },
         settings = {
           intelephense = {
@@ -51,8 +54,17 @@ return {
       lspconfig.astro.setup({
         capabilities = capabilities
       })
+      lspconfig.svelte.setup({
+        capabilities = capabilities
+      })
+      lspconfig.jsonls.setup({
+        capabilities = capabilities
+      })
+      lspconfig.csharp_ls.setup({
+        capabilities = capabilities
+      })
       lspconfig.html.setup({
-        filetypes = {"html", "latte" },
+        filetypes = { "html", "latte" },
         capabilities = capabilities
       })
       lspconfig.slint_lsp.setup({
@@ -61,10 +73,13 @@ return {
       lspconfig.hls.setup({
         capabilities = capabilities
       })
-      -- lspconfig.tsserver.setup({
-      --   capabilities = capabilities
-      -- })
+      lspconfig.ts_ls.setup({
+        capabilities = capabilities
+      })
       lspconfig.css_variables.setup({
+        capabilities = capabilities
+      })
+      lspconfig.tailwindcss.setup({
         capabilities = capabilities
       })
       lspconfig.rust_analyzer.setup({
@@ -87,13 +102,9 @@ return {
       })
       -- TODO: finish implementing omnisharp lsp to work with c#
 
-      lspconfig.omnisharp.setup({
-        cmd = { "omnisharp_bin", "--languageserver", "--hostPID" },
-        capabilities = capabilities
-      })
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
-      vim.keymap.set({ 'n', 'v' }, '<space>ca', vim.lsp.buf.code_action, opts)
+      vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, opts)
       vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
     end
   }
