@@ -1,4 +1,4 @@
-# neovim/
+# Zlatovlas Neovim
 
 <a href="https://dotfyle.com/Zlatovlaska11/neovim"><img src="https://dotfyle.com/Zlatovlaska11/neovim/badges/plugins?style=flat" /></a>
 <a href="https://dotfyle.com/Zlatovlaska11/neovim"><img src="https://dotfyle.com/Zlatovlaska11/neovim/badges/leaderkey?style=flat" /></a>
