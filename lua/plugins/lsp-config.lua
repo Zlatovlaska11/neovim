@@ -22,12 +22,11 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      local lspconfig = require("lspconfig")
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
-      lspconfig.lua_ls.setup({
+      vim.lsp.config("lua_ls", {
         capabilities = capabilities
       })
-      lspconfig.dartls.setup({
+      vim.lsp.config("dartls", {
         cmd = { "dart", "language-server", "--protocol=lsp" },
         filetypes = { "dart" },
         init_options = {
@@ -37,52 +36,53 @@ return {
         },
       })
 
-      lspconfig.clangd.setup({
+      vim.lsp.config("clangd", {
         capabilities = capabilities
       })
-      lspconfig.ocamllsp.setup({
+      vim.lsp.config("ocamllsp", {
         capabilities = capabilities
       })
-      lspconfig.phpactor.setup({
-        filetypes = { "php", "latte" },
-        settings = {
-          intelephense = {
-            stubs = { "nette" },
-          },
-        },
-      })
-      lspconfig.astro.setup({
+      vim.lsp.config("phpactor", {
         capabilities = capabilities
       })
-      lspconfig.svelte.setup({
+      vim.lsp.config("astro", {
         capabilities = capabilities
       })
-      lspconfig.jsonls.setup({
+      vim.lsp.config("ts_ls", {
         capabilities = capabilities
       })
-      lspconfig.csharp_ls.setup({
+      vim.lsp.config("svelte", {
         capabilities = capabilities
       })
-      lspconfig.html.setup({
+      vim.lsp.config("jsonls", {
+        capabilities = capabilities
+      })
+      vim.lsp.config("csharp_ls", {
+        capabilities = capabilities
+      })
+      vim.lsp.config("pylsp", {
+        capabilities = capabilities
+      })
+      vim.lsp.config("html", {
         filetypes = { "html", "latte" },
         capabilities = capabilities
       })
-      lspconfig.slint_lsp.setup({
+      vim.lsp.config("slint_lsp", {
         capabilities = capabilities
       })
-      lspconfig.hls.setup({
+      vim.lsp.config("hls", {
         capabilities = capabilities
       })
-      lspconfig.ts_ls.setup({
+      vim.lsp.config("ts_ls", {
         capabilities = capabilities
       })
-      lspconfig.css_variables.setup({
+      vim.lsp.config("css_variables", {
         capabilities = capabilities
       })
-      lspconfig.tailwindcss.setup({
+      vim.lsp.config("tailwindcss", {
         capabilities = capabilities
       })
-      lspconfig.rust_analyzer.setup({
+      vim.lsp.config("rust_analyzer", {
         on_attach = function(client, buff)
           print([[rust_analyzer is attached]])
         end,
@@ -97,7 +97,7 @@ return {
         },
         capabilities = capabilities
       })
-      lspconfig.gopls.setup({
+      vim.lsp.config("gopls", {
         capabilities = capabilities
       })
       -- TODO: finish implementing omnisharp lsp to work with c#
